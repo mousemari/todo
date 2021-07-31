@@ -17,7 +17,7 @@ function addTodo() {
 function createItem(value) {
   //let item = document.createElement();
   const newLi = document.createElement('li');
-  todoList.appendChild(newLi);
+  todoList.insertBefore(newLi, todoList.firstChild);
 
   const item = document.createElement('ul');
   item.className = 'todo__item';
