@@ -34,7 +34,10 @@ function createItem(value) {
   function doneItem() {
     done.className = 'todo__done_checked';
     li.classList.add('todo__value_checked');
+
+    todoList.appendChild(newLi); //if done then move to the end of list
   }
+
   //value
   const li = document.createElement('li');
   li.className = 'todo__value';
