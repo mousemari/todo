@@ -11,6 +11,7 @@ body {
 
 h1 {
   color: rgb(31, 31, 31);
+  text-align: center;
 }
 
 .wrapper {
@@ -21,7 +22,6 @@ h1 {
   margin: 30px auto;
   padding: 15px;
   border-radius: 15px;
-  text-align: center;
 }
 
 @media screen and (max-width: 360px) {
@@ -30,14 +30,13 @@ h1 {
   }
 }
 
-/* Btns */
+/* some basis*/
 button {
   border: none;
   background-color: transparent;
   cursor: pointer;
 }
 
-/* List item */
 li {
   list-style: none;
 }
@@ -78,29 +77,29 @@ li {
 }
 
 /* List */
-.item {
+.todo__item {
   display: flex;
+  align-items: center;
   margin: 10px;
-  /* visibility: hidden; */
 }
 
-.item__done {
+.todo__done {
   color: gray;
 }
-.item__done:hover {
+.todo__done:hover {
   color: rgb(186, 236, 178);
 }
 
-.item__value {
+.todo__value {
   flex-grow: 1;
   margin: 0 5px;
   color: whitesmoke;
   text-transform: capitalize;
 }
 
-.item__remove {
+.todo__remove {
   color: rgb(43, 43, 43);
 }
-.item__remove:hover {
+.todo__remove:hover {
   color: brown;
 }
