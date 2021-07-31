@@ -40,4 +40,11 @@ function createItem(value) {
   remove.className = 'todo__remove';
   remove.innerHTML = '<i class="material-icons">delete</i>';
   item.appendChild(remove);
+
+  remove.addEventListener('click', removeItem);
+
+  function removeItem() {
+    const todoItem = item.parentElement;
+    todoItem.remove();
+  }
 }
