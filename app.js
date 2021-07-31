@@ -29,6 +29,12 @@ function createItem(value) {
   done.innerHTML = '<i class="material-icons">done</i>';
   item.appendChild(done);
 
+  done.addEventListener('click', doneItem);
+
+  function doneItem() {
+    done.className = 'todo__done_checked';
+    li.classList.add('todo__value_checked');
+  }
   //value
   const li = document.createElement('li');
   li.className = 'todo__value';

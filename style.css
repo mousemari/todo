@@ -76,6 +76,10 @@ li {
   color: rgb(186, 236, 178);
 }
 
+.addItem__submit:active {
+  color: rgb(121, 204, 109);
+}
+
 /* List */
 .todo__item {
   display: flex;
@@ -90,11 +94,20 @@ li {
   color: rgb(186, 236, 178);
 }
 
+.todo__done_checked {
+  color: rgb(3, 165, 3);
+  pointer-events: none;
+}
+
 .todo__value {
   flex-grow: 1;
   margin: 0 5px;
   color: whitesmoke;
-  text-transform: capitalize;
+}
+
+.todo__value_checked {
+  color: gray;
+  text-decoration: line-through;
 }
 
 .todo__remove {
