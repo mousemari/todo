@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+
+    <title>Todo</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>ToDo List</h1>
+
+      <!-- Add new item -->
+      <div class="addItem">
+        <input type="text" class="addItem__input" />
+        <button class="addItem__submit">
+          <i class="material-icons">note_add</i>
+        </button>
+      </div>
+
+      <!-- List of items -->
+      <ul class="todoList">
+        <div class="todoList__item item">
+          <button class="item__done">
+            <i class="material-icons">done</i>
+          </button>
+          <li class="item__value">Lorem ipsum dolor sit amet.</li>
+          <button class="item__remove">
+            <i class="material-icons">delete</i>
+          </button>
+        </div>
+      </ul>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
