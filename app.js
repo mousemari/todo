@@ -6,6 +6,9 @@ let todoList = document.querySelector('.todo');
 
 //eventListeners
 submit.addEventListener('click', addTodo);
+input.addEventListener('keypress', (e) => {
+  if (e.key === 'Enter') addTodo();
+});
 
 function addTodo() {
   let value = input.value;
