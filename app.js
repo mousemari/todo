@@ -4,7 +4,7 @@ let input = document.querySelector('.addItem__input');
 let submit = document.querySelector('.addItem__submit');
 let todoList = document.querySelector('.todo');
 
-//eventListener
+//eventListeners
 submit.addEventListener('click', addTodo);
 
 function addTodo() {
@@ -16,9 +16,12 @@ function addTodo() {
 
 function createItem(value) {
   //let item = document.createElement();
-  const item = document.createElement('div');
+  const newLi = document.createElement('li');
+  todoList.appendChild(newLi);
+
+  const item = document.createElement('ul');
   item.className = 'todo__item';
-  todoList.appendChild(item);
+  newLi.appendChild(item);
 
   //btn "done"
   const done = document.createElement('button');
