@@ -4,24 +4,35 @@
   box-sizing: border-box;
 }
 
+html {
+  background: linear-gradient(
+      to right bottom,
+      rgb(241, 198, 132),
+      rgb(255, 109, 98)
+    )
+    no-repeat;
+  height: 100%;
+  background-size: cover;
+}
+
 body {
-  background-color: rgb(31, 31, 31);
   font-family: sans-serif;
 }
 
 h1 {
-  color: rgb(31, 31, 31);
+  color: rgb(255, 109, 98);
   text-align: center;
 }
 
 .wrapper {
-  background-color: rgb(158, 158, 158);
+  background-color: rgba(230, 230, 230, 0.7);
   max-width: 350px;
   min-width: auto;
   min-height: 50vh;
   margin: 30px auto;
   padding: 15px;
   border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (max-width: 360px) {
@@ -40,11 +51,6 @@ button {
 li {
   list-style: none;
 }
-
-/* Icons */
-/* .material-icons {
-  text-shadow: 2x 2px 4px rgb(3, 3, 3);
-} */
 
 /* Add item */
 .addItem {
@@ -69,15 +75,16 @@ li {
 }
 
 .addItem__submit {
-  color: whitesmoke;
+  color: white;
   margin-left: 5px;
 }
 .addItem__submit:hover {
-  color: rgb(186, 236, 178);
+  text-shadow: 0px 0px 4px rgb(255, 109, 98);
 }
 
 .addItem__submit:active {
-  color: rgb(121, 204, 109);
+  /* color: rgb(255, 233, 199); */
+  text-shadow: 0px 0px 4px rgb(241, 198, 132);
 }
 
 /* List */
@@ -88,31 +95,35 @@ li {
 }
 
 .todo__done {
-  color: gray;
+  color: white;
 }
 .todo__done:hover {
-  color: rgb(186, 236, 178);
+  color: rgb(153, 226, 153);
+  text-shadow: 0px 0px 2px rgb(85, 218, 85);
 }
 
 .todo__done_checked {
-  color: rgb(3, 165, 3);
+  color: rgb(85, 218, 85);
   pointer-events: none;
 }
 
 .todo__value {
   flex-grow: 1;
   margin: 0 5px;
-  color: whitesmoke;
+  color: rgb(255, 109, 98);
+  text-shadow: 0px 0px 3px white;
+  font-weight: 700;
 }
 
 .todo__value_checked {
   color: gray;
   text-decoration: line-through;
+  text-shadow: none;
 }
 
 .todo__remove {
-  color: rgb(43, 43, 43);
+  color: white;
 }
 .todo__remove:hover {
-  color: brown;
+  color: rgb(255, 109, 98);
 }
